@@ -131,6 +131,61 @@
           </div>
         </div>
       </div>
+
+      <section id="my-animals">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col"><h2>My Animals</h2></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animal-box">
+                <h4 class="animal-name">Deer</h4>
+                <img src="img/animals/deer.png" alt="Deer" class="animal-img" />
+                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animal-box">
+                <h4 class="animal-name">Zebra</h4>
+                <img src="img/animals/zebra.png" alt="Zebra" class="animal-img" />
+                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animal-box">
+                <h4 class="animal-name">Rhino</h4>
+                <img src="img/animals/rhino.png" alt="Rhino" class="animal-img" />
+                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animal-box">
+                <h4 class="animal-name">Camel</h4>
+                <img src="img/animals/camel.png" alt="Camel" class="animal-img" />
+                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animal-box">
+                <h4 class="animal-name">Elephant</h4>
+                <img src="img/animals/elephant.png" alt="Elephant" class="animal-img" />
+                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animal-box">
+                <h4 class="animal-name">Rhino</h4>
+                <img src="img/animals/hippo.png" alt="Rhino" class="animal-img" />
+                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -309,6 +364,14 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".animal-box"), {
+        max: 35,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
